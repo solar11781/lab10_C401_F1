@@ -27,7 +27,7 @@ question: q_refund_window
 contains_expected: yes
 hits_forbidden: yes
 Cho thấy hệ thống đã retrive chunk policy sai (14 ngày)
----
+
 
 ## Diagnosis
 
