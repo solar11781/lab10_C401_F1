@@ -31,13 +31,13 @@ Cho thấy hệ thống đã retrive chunk policy sai (14 ngày)
 
 ## Diagnosis
 
-------------------|
+
 | 1 | Kiểm tra `artifacts/manifests/*.json` | Xác nhận pipeline run gần nhất và metadata của dataset|
 | 2 | Mở `artifacts/quarantine/*.csv` |Kiểm tra các row bị loại và lý do (duplicate, stale version, encoding lỗi…) |
 | 3 | Chạy `python eval_retrieval.py` | Xác định câu hỏi nào đang retrieve chunk sai|
 | 4 | Kiểm tra cleaned dataset | Xác nhận text đã được sửa 14 ngày → 7 ngày|
 | 5 | Kiểm tra embedding collection | Đảm bảo stale vectors đã bị prune|
----
+
 Giả sử :
 Nếu evaluation cho thấy:
 
