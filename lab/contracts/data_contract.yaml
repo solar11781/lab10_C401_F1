@@ -27,11 +27,77 @@ schema_cleaned:
     required: true
 
 quality_rules:
-  - id: "no_duplicate_chunk_text"
-    severity: "warn"
+  - id: "unknown_doc_id"
+    description: "Tài liệu không nằm trong danh sách cho phép (ALLOWED_DOC_IDS)"
+    severity: "halt"
+
+  - id: "missing_effective_date"
+    description: "Thiếu ngày hiệu lực (effective_date trống)"
+    severity: "halt"
+
+  - id: "invalid_effective_date"
+    description: "Ngày hiệu lực sai định dạng (chỉ chấp nhận YYYY-MM-DD hoặc DD/MM/YYYY) hoặc ngày hiệu lực vô lý không tồn tại thực tế (ví dụ: 32/13/2026)"
+    severity: "halt"
+
+  - id: "stale_hr_policy_effective_date"
+    description: "Chính sách HR đã cũ (hiệu lực trước 01/01/2026)"
+    severity: "halt"
+
+  - id: "stale_document_version"
+    description: "Version của tài liệu bị cũ hơn so với version mới nhất được tìm thấy trong batch"
+    severity: "halt"
+
   - id: "no_stale_refund_window"
     description: "Không được để chunk policy refund chứa cửa sổ 14 ngày (lệch so với v4 = 7 ngày)"
+    severity: "halt" # Trong code có cơ chế auto-fix nếu apply_refund_window_fix = True
+
+  - id: "dummy_test_data"
+    description: "Nội dung chứa dữ liệu rác/test (lorem ipsum, dữ liệu test, lỗi hệ thống...)"
     severity: "halt"
+
+  - id: "oversized_chunk"
+    description: "Chunk quá dài (> 300 từ), cần chia nhỏ thêm"
+    severity: "halt"
+
+  - id: "encoding_mojibake_error"
+    description: "Lỗi hiển thị font chữ/Mojibake (chứa các ký tự Ã, Ä, Å...)"
+    severity: "halt"
+
+  - id: "broken_text_missing_vowels"
+    description: "Lỗi rụng nguyên âm khi parse (chứa ≥2 từ chỉ toàn phụ âm)"
+    severity: "halt"
+
+  - id: "gibberish_keysmash_consonants"
+    description: "Nội dung vô nghĩa do gõ bừa (chứa chuỗi ≥6 phụ âm liên tiếp)"
+    severity: "halt"
+
+  - id: "gibberish_absurd_word_length"
+    description: "Nội dung chứa từ có độ dài bất thường (> 25 ký tự/từ)"
+    severity: "halt"
+
+  - id: "it_log_dump_noise"
+    description: "Nhiễu dữ liệu do dump log IT (tỷ lệ ký tự đặc biệt > 25%)"
+    severity: "halt"
+
+  - id: "no_duplicate_chunk_text"
+    description: "Trùng lặp nội dung chunk (check bằng mã băm MD5 sau khi chuẩn hóa)"
+    severity: "warn"
+
+  - id: "resolve_template_variables"
+    description: "Tự động map {{SUPPORT_EMAIL}} và che giấu các {{SYSTEM_DATA}} khác"
+    severity: "fix"
+
+  - id: "normalize_teencode"
+    description: "Dịch các từ viết tắt phổ biến (kh, sp, ko, đc, tt) sang tiếng Việt chuẩn"
+    severity: "fix"
+
+  - id: "mask_pii_data"
+    description: "Che giấu thông tin nhạy cảm: Thẻ tín dụng [REDACTED_CC] và SĐT [REDACTED_PHONE]"
+    severity: "fix"
+
+  - id: "strip_markdown_links"
+    description: "Loại bỏ định dạng link Markdown, chỉ giữ lại phần text hiển thị"
+    severity: "fix"
 
 freshness:
   measured_at: "publish"  # ingest | cleaned | publish

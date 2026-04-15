@@ -11,6 +11,13 @@ chunk_id,doc_id,chunk_text,effective_date,exported_at
 10,it_helpdesk_faq,"FAQ bổ sung: đổi mật khẩu qua portal self-service có thể mất tối đa 24 giờ để đồng bộ toàn hệ thống.",01/02/2026,2026-04-10T08:00:00
 11,it_helpdesk_faq,"Laptop được cấp trong ngày onboarding đầu tiên. Nếu có vấn đề, liên hệ HR hoặc IT Admin.",2026-20-01,2026-04-10T08:00:00
 12,it_helpdesk_faq,"Màn hình xanh (BSOD) do xung đột driver cc thit b ngoi vi.",2026-02-01,2026-04-10T8:00:00
-13,hr_leave_policy,"ChÃnh sÃ¡ch nghá»‰ phÃ©p nÄƒm Ã¡p dá»¥ng cho toÃ n bá»™ nhÃ¢n viÃªn.",2026-01-01,2026-04-10T8:00:00
+13,hr_leave_policy,"ChÃnh sÃ¡ch nghá»‰ phÃ©p nÄƒm Ã¡p dá»¥ng cho toÃ n bá»™ nhÃ¢n viÃªn.",2026-02-01,2026-04-10T8:00:00
 14,it_helpdesk_faq,"Tài khoản bị khóa sau 10 lần đăng nhập sai liên tiếp (bản FAQ 2024).",2024-01-01,2026-04-10T8:00:00
 15,sla_p1_2026,"allorueuiouoiiuoasfasosfoadioip oawiosoidioqlllrkqklwqrlkappapppfdoo",2026-02-01,2026-04-10T08:00:00
+16,it_helpdesk_faq,"Để reset password, vui lòng gọi hotline 0987654321 hoặc báo cho quản lý.",2026-02-01,2026-04-10T08:00:00
+17,policy_refund_v4,"Tiền sẽ được hoàn về thẻ tín dụng 1234-4567-8901-2345 của quý khách trong 3 ngày.",2026-02-01,2026-04-10T08:00:00
+18,policy_refund_v4,"Vui lòng gửi email khiếu nại về {{SUPPORT_EMAIL}} kèm theo mã giao dịch {{TRANSACTION_ID}}.",2026-02-01,2026-04-10T08:00:00
+19,sla_p1_2026,"Nếu kh ko nhận đc phản hồi về sp đã tt, IT phải escalate lên L2 ngay lập tức.",2026-02-01,2026-04-10T08:00:00
+20,hr_leave_policy,"Chi tiết quy trình nghỉ phép xem tại [Cổng thông tin nhân sự](https://hr.company.internal/leave).",2026-02-01,2026-04-10T08:00:00
+21,it_helpdesk_faq,"[ERROR] \/\/ *** java.lang.NullPointerException && @@@ %%% ||| kernel_panic: 0x000000",2026-02-01,2026-04-10T08:00:00
+22,policy_refund_v4,"kh có thể xem bill [ở đây](http://link.com) và gọi 0901234567 hoặc gửi {{SUPPORT_EMAIL}} để đc hoàn tt.",2026-02-01,2026-04-10T08:00:00
