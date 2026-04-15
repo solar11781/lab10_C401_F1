@@ -9,3 +9,8 @@ chunk_id,doc_id,chunk_text,effective_date,exported_at
 8,hr_leave_policy,"Nhân viên dưới 3 năm kinh nghiệm được 12 ngày phép năm theo chính sách 2026.",2026-02-01,2026-04-10T08:00:00
 9,legacy_catalog_xyz_zzz,"Chunk nội dung đủ dài để vượt ngưỡng expectation độ dài tối thiểu trong cleaned export.",2026-02-01,2026-04-10T08:00:00
 10,it_helpdesk_faq,"FAQ bổ sung: đổi mật khẩu qua portal self-service có thể mất tối đa 24 giờ để đồng bộ toàn hệ thống.",01/02/2026,2026-04-10T08:00:00
+11,it_helpdesk_faq,"Laptop được cấp trong ngày onboarding đầu tiên. Nếu có vấn đề, liên hệ HR hoặc IT Admin.",2026-20-01,2026-04-10T08:00:00
+12,it_helpdesk_faq,"Màn hình xanh (BSOD) do xung đột driver cc thit b ngoi vi.",2026-02-01,2026-04-10T8:00:00
+13,hr_leave_policy,"ChÃnh sÃ¡ch nghá»‰ phÃ©p nÄƒm Ã¡p dá»¥ng cho toÃ n bá»™ nhÃ¢n viÃªn.",2026-01-01,2026-04-10T8:00:00
+14,it_helpdesk_faq,"Tài khoản bị khóa sau 10 lần đăng nhập sai liên tiếp (bản FAQ 2024).",2024-01-01,2026-04-10T8:00:00
+15,sla_p1_2026,"allorueuiouoiiuoasfasosfoadioip oawiosoidioqlllrkqklwqrlkappapppfdoo",2026-02-01,2026-04-10T08:00:00
