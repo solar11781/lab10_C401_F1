@@ -3,7 +3,7 @@
 
 version: "1.0"
 dataset: "kb_chunk_export"
-owner_team: "__TODO__"
+owner_team: "CS + IT Helpdesk"
 
 schema_cleaned:
   chunk_id:
@@ -124,3 +124,6 @@ allowed_doc_ids:
 # Merit/Distinction: có thể đưa cutoff versioning vào env và tham chiếu ở đây (tránh hard-code trong code).
 policy_versioning:
   hr_leave_min_effective_date: "2026-01-01"
+  policy_refund_min_effective_date: "2026-02-01"
+  sla_p1_2026_min_effective_date: "2026-02-01"
+  it_helpdesk_faq_min_effective_date: "2026-02-01"
