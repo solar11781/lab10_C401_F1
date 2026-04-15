@@ -55,7 +55,7 @@ def _normalize_effective_date(raw: str) -> Tuple[str, str]:
             return s, ""
         except ValueError:
             # Trả về lý do lỗi mới cho các ngày vô lý
-            return "", "invalid_effective_date_value"
+            return "", "invalid_effective_date"
 
     # Trường hợp 2: Khớp định dạng DD/MM/YYYY
     m = _DMY_SLASH.match(s)
@@ -67,10 +67,10 @@ def _normalize_effective_date(raw: str) -> Tuple[str, str]:
             datetime.strptime(iso_str, "%Y-%m-%d")
             return iso_str, ""
         except ValueError:
-            return "", "invalid_effective_date_value"
+            return "", "invalid_effective_date"
 
     # Trường hợp 3: Hoàn toàn sai định dạng chữ/số
-    return "", "invalid_effective_date_format"
+    return "", "invalid_effective_date"
 
 
 def load_raw_csv(path: Path) -> List[Dict[str, str]]:
