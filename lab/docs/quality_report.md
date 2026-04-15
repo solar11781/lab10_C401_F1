@@ -33,6 +33,8 @@
 
 ## 3. Freshness & monitor
 
+> Kết quả `freshness_check` (PASS/WARN/FAIL) và giải thích SLA bạn chọn.
+
 Kết quả quan sát được trong `run_good-run-1.log` và `run_good-run-2.log` là `freshness_check=FAIL` với `latest_exported_at="2026-04-10T08:00:00"` và `sla_hours=24.0`. Ở `run_good-run-2.log`, `age_hours=121.178`, nên dữ liệu vượt SLA 24 giờ. Theo `freshness_check.py`, kiểm tra này đọc `latest_exported_at` từ manifest; nếu không có mới fallback sang `run_timestamp`. Với artifact hiện có, `manifest_good-run-2.json` cũng ghi `latest_exported_at="2026-04-10T08:00:00"`, nên kết quả `FAIL` là nhất quán với SLA 24 giờ.
 
 ---
