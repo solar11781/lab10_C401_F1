@@ -1,13 +1,19 @@
 # Báo Cáo Nhóm — Lab Day 10: Data Pipeline & Data Observability
 
-**Tên nhóm:** F1-C401 
-**Thành viên:**
+## Thông tin nhóm
+
+**Tên nhóm:** F1-C401  
+
+### Thành viên
+
+| Họ và tên | Vai trò | Email |
+|-----------|--------|-------|
 | Lê Duy Anh | Ingestion Owner | leduyanh2k3@gmail.com |
-| Bùi Trần Gia Bảo | Embeded Owner | billxd04@gmail.com |
-| Lại Gia Khánh | Embeded Owner | laigiakhanh1211@gmail.com |
-| Trương Minh Sơn | Monitoring / Docs Owner  | chokhon2004@gmail.com |
+| Bùi Trần Gia Bảo | Embedding Owner | billxd04@gmail.com |
+| Lại Gia Khánh | Embedding Owner | laigiakhanh1211@gmail.com |
+| Trương Minh Sơn | Monitoring / Docs Owner | chokhon2004@gmail.com |
 | Mạc Phương Nga | Cleaning / Quality Owner | mpnga03@gmail.com |
-| Nguyễn Phạm Trà My | Cleaning / Quality Owner | ___ |
+| Nguyễn Phạm Trà My | Cleaning / Quality Owner | — |
 
 **Ngày nộp:** 15/4/2026 
 **Repo:** (https://github.com/solar11781/lab10_C401_F1) 
