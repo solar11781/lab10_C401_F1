@@ -1,0 +1,19 @@
+run_id=good-run-2
+raw_records=22
+cleaned_records=9
+quarantine_records=13
+cleaned_csv=artifacts\cleaned\cleaned_good-run-2.csv
+quarantine_csv=artifacts\quarantine\quarantine_good-run-2.csv
+expectation[min_one_row] OK (halt) :: cleaned_rows=9
+expectation[no_empty_doc_id] OK (halt) :: empty_doc_id_count=0
+expectation[refund_no_stale_14d_window] OK (halt) :: violations=0
+expectation[chunk_min_length_8] OK (warn) :: short_chunks=0
+expectation[effective_date_iso_yyyy_mm_dd] OK (halt) :: non_iso_rows=0
+expectation[hr_leave_no_stale_10d_annual] OK (halt) :: violations=0
+expectation[exported_at_iso_and_present] OK (halt) :: bad_exported_at_rows=0
+expectation[chunk_text_too_long_warning] OK (warn) :: too_long_chunks=0, max_len=200
+expectation[doc_id_allowed_set_warning] OK (warn) :: unknown_doc_ids=0
+embed_upsert count=9 collection=day10_kb
+manifest_written=artifacts\manifests\manifest_good-run-2.json
+freshness_check=FAIL {"latest_exported_at": "2026-04-10T08:00:00", "age_hours": 121.178, "sla_hours": 24.0, "reason": "freshness_sla_exceeded"}
+PIPELINE_OK
