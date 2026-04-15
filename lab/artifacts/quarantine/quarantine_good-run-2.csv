@@ -1,0 +1,14 @@
+chunk_id,doc_id,chunk_text,effective_date,exported_at,effective_date_normalized,reason,run_id
+2,policy_refund_v4,Yêu cầu được gửi trong vòng 7 ngày làm việc kể từ thời điểm xác nhận đơn hàng.,2026-02-01,2026-04-10T08:00:00,,duplicate_chunk_text,DEFAULT_RUN_ID
+5,policy_refund_v4,,,2026-04-10T08:00:00,,missing_effective_date,DEFAULT_RUN_ID
+7,hr_leave_policy,Nhân viên dưới 3 năm kinh nghiệm được 10 ngày phép năm (bản HR 2025).,2025-01-01,2026-04-10T08:00:00,2025-01-01,stale_hr_policy_effective_date,DEFAULT_RUN_ID
+9,legacy_catalog_xyz_zzz,Chunk nội dung đủ dài để vượt ngưỡng expectation độ dài tối thiểu trong cleaned export.,2026-02-01,2026-04-10T08:00:00,,unknown_doc_id,DEFAULT_RUN_ID
+11,it_helpdesk_faq,"Laptop được cấp trong ngày onboarding đầu tiên. Nếu có vấn đề, liên hệ HR hoặc IT Admin.",2026-20-01,2026-04-10T08:00:00,,stale_document_version,DEFAULT_RUN_ID
+12,it_helpdesk_faq,Màn hình xanh (BSOD) do xung đột driver cc thit b ngoi vi.,2026-02-01,2026-04-10T8:00:00,,broken_text_missing_vowels,DEFAULT_RUN_ID
+13,hr_leave_policy,ChÃnh sÃ¡ch nghá»‰ phÃ©p nÄƒm Ã¡p dá»¥ng cho toÃ n bá»™ nhÃ¢n viÃªn.,2026-02-01,2026-04-10T8:00:00,,encoding_mojibake_error,DEFAULT_RUN_ID
+14,it_helpdesk_faq,Tài khoản bị khóa sau 10 lần đăng nhập sai liên tiếp (bản FAQ 2024).,2024-01-01,2026-04-10T8:00:00,,stale_document_version,DEFAULT_RUN_ID
+15,sla_p1_2026,allorueuiouoiiuoasfasosfoadioip oawiosoidioqlllrkqklwqrlkappapppfdoo,2026-02-01,2026-04-10T08:00:00,,gibberish_keysmash_consonants,DEFAULT_RUN_ID
+19,sla_p1_2026,"Nếu kh ko nhận đc phản hồi về sp đã tt, IT phải escalate lên L2 ngay lập tức.",2026-02-01,2026-04-10T08:00:00,,broken_text_missing_vowels,DEFAULT_RUN_ID
+20,hr_leave_policy,Chi tiết quy trình nghỉ phép xem tại [Cổng thông tin nhân sự](https://hr.company.internal/leave).,2026-02-01,2026-04-10T08:00:00,,broken_text_missing_vowels,DEFAULT_RUN_ID
+21,it_helpdesk_faq,[ERROR] \/\/ *** java.lang.NullPointerException && @@@ %%% ||| kernel_panic: 0x000000,2026-02-01,2026-04-10T08:00:00,,gibberish_absurd_word_length,DEFAULT_RUN_ID
+22,policy_refund_v4,kh có thể xem bill [ở đây](http://link.com) và gọi 0901234567 hoặc gửi {{SUPPORT_EMAIL}} để đc hoàn tt.,2026-02-01,2026-04-10T08:00:00,,broken_text_missing_vowels,DEFAULT_RUN_ID
