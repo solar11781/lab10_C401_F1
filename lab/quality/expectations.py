@@ -151,5 +151,27 @@ def run_expectations(cleaned_rows: List[Dict[str, Any]]) -> Tuple[List[Expectati
             f"too_long_chunks={len(too_long)}, max_len={max_len}",
         )
     )
+    # E9: doc_id phải nằm trong allowlist (cảnh báo)
+    allowed_doc_ids = {
+        "policy_refund_v4",
+        "sla_p1_2026",
+        "it_helpdesk_faq",
+        "hr_leave_policy",
+    }
+    
+    unknown = [
+        r for r in cleaned_rows
+        if (r.get("doc_id") or "").strip() not in allowed_doc_ids
+    ]
+    
+    ok13 = len(unknown) == 0
+    results.append(
+        ExpectationResult(
+            "doc_id_allowed_set_warning",
+            ok13,
+            "warn",
+            f"unknown_doc_ids={len(unknown)}",
+        )
+    )
     halt = any(not r.passed and r.severity == "halt" for r in results)
     return results, halt
