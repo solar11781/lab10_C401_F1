@@ -5,7 +5,7 @@ Sinh viên có thể thay bằng GE / pydantic / custom — miễn là có halt 
 """
 
 from __future__ import annotations
-
+from datetime import datetime, timezone
 import re
 from dataclasses import dataclass
 from typing import Any, Dict, List, Tuple
@@ -112,5 +112,44 @@ def run_expectations(cleaned_rows: List[Dict[str, Any]]) -> Tuple[List[Expectati
         )
     )
 
+
+    # E7: exported_at phải có và đúng định dạng ISO datetime
+    bad_exported_at = []
+    for r in cleaned_rows:
+        val = (r.get("exported_at") or "").strip()
+        try:
+            # hỗ trợ dạng có Z
+            from datetime import datetime
+            datetime.fromisoformat(val.replace("Z", "+00:00"))
+        except Exception:
+            bad_exported_at.append(r)
+
+    ok9 = len(bad_exported_at) == 0
+    results.append(
+        ExpectationResult(
+            "exported_at_iso_and_present",
+            ok9,
+            "halt",
+            f"bad_exported_at_rows={len(bad_exported_at)}",
+        )
+    )
+
+    # E8: chunk_text quá dài (cảnh báo)
+    max_len = 200  # bạn có thể chỉnh
+
+    too_long = [
+        r for r in cleaned_rows
+        if len((r.get("chunk_text") or "")) > max_len
+    ]
+
+    ok11 = len(too_long) == 0
+    results.append(
+        ExpectationResult(
+            "chunk_text_too_long_warning",
+            ok11,
+            "warn",
+            f"too_long_chunks={len(too_long)}, max_len={max_len}",
+        )
+    )
     halt = any(not r.passed and r.severity == "halt" for r in results)
     return results, halt
