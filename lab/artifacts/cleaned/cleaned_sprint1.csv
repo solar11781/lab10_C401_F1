@@ -1,0 +1,19 @@
+chunk_id,doc_id,chunk_text,effective_date,exported_at
+policy_refund_v4_1_3b11f30cc4b49d25,policy_refund_v4,Yêu cầu được gửi trong vòng 7 ngày làm việc kể từ thời điểm xác nhận đơn hàng.,2026-02-01,2026-04-10T08:00:00
+policy_refund_v4_2_c96089a43e33aa9d,policy_refund_v4,Yêu cầu hoàn tiền được chấp nhận trong vòng 7 ngày làm việc kể từ xác nhận đơn (ghi chú: bản sync cũ policy-v3 — lỗi migration). [cleaned: stale_refund_window],2026-02-01,2026-04-10T08:00:00
+sla_p1_2026_3_ab622211ba880896,sla_p1_2026,Ticket P1 có SLA phản hồi ban đầu 15 phút và resolution trong 4 giờ.,2026-02-01,2026-04-10T08:00:00
+it_helpdesk_faq_4_ba09094c6802344b,it_helpdesk_faq,Tài khoản bị khóa sau 5 lần đăng nhập sai liên tiếp.,2026-02-01,2026-04-10T08:00:00
+hr_leave_policy_5_818ac82ac90f32fc,hr_leave_policy,Nhân viên dưới 3 năm kinh nghiệm được 12 ngày phép năm theo chính sách 2026.,2026-02-01,2026-04-10T08:00:00
+it_helpdesk_faq_6_76d38c1b20d4459f,it_helpdesk_faq,FAQ bổ sung: đổi mật khẩu qua portal self-service có thể mất tối đa 24 giờ để đồng bộ toàn hệ thống.,2026-02-01,2026-04-10T08:00:00
+it_helpdesk_faq_7_d5aa54f2e9968564,it_helpdesk_faq,"Laptop được cấp trong ngày onboarding đầu tiên. Nếu có vấn đề, liên hệ HR hoặc IT Admin.",2026-20-01,2026-04-10T08:00:00
+it_helpdesk_faq_8_7053b6cbf7f0c5d8,it_helpdesk_faq,Màn hình xanh (BSOD) do xung đột driver cc thit b ngoi vi.,2026-02-01,2026-04-10T8:00:00
+hr_leave_policy_9_9fb8e7eed8f16a50,hr_leave_policy,ChÃnh sÃ¡ch nghá»‰ phÃ©p nÄƒm Ã¡p dá»¥ng cho toÃ n bá»™ nhÃ¢n viÃªn.,2026-02-01,2026-04-10T8:00:00
+it_helpdesk_faq_10_79262feadeceaa30,it_helpdesk_faq,Tài khoản bị khóa sau 10 lần đăng nhập sai liên tiếp (bản FAQ 2024).,2024-01-01,2026-04-10T8:00:00
+sla_p1_2026_11_b1b7ed3ba030e12f,sla_p1_2026,allorueuiouoiiuoasfasosfoadioip oawiosoidioqlllrkqklwqrlkappapppfdoo,2026-02-01,2026-04-10T08:00:00
+it_helpdesk_faq_12_d28d7b1dc1beb0e4,it_helpdesk_faq,"Để reset password, vui lòng gọi hotline 0987654321 hoặc báo cho quản lý.",2026-02-01,2026-04-10T08:00:00
+policy_refund_v4_13_dfc1c3fc6b7bfc75,policy_refund_v4,Tiền sẽ được hoàn về thẻ tín dụng 1234-4567-8901-2345 của quý khách trong 3 ngày.,2026-02-01,2026-04-10T08:00:00
+policy_refund_v4_14_89b6315a1f53ad7b,policy_refund_v4,Vui lòng gửi email khiếu nại về {{SUPPORT_EMAIL}} kèm theo mã giao dịch {{TRANSACTION_ID}}.,2026-02-01,2026-04-10T08:00:00
+sla_p1_2026_15_524fc71df690ddf0,sla_p1_2026,"Nếu kh ko nhận đc phản hồi về sp đã tt, IT phải escalate lên L2 ngay lập tức.",2026-02-01,2026-04-10T08:00:00
+hr_leave_policy_16_3454e9846e16717a,hr_leave_policy,Chi tiết quy trình nghỉ phép xem tại [Cổng thông tin nhân sự](https://hr.company.internal/leave).,2026-02-01,2026-04-10T08:00:00
+it_helpdesk_faq_17_707d546879751cce,it_helpdesk_faq,[ERROR] \/\/ *** java.lang.NullPointerException && @@@ %%% ||| kernel_panic: 0x000000,2026-02-01,2026-04-10T08:00:00
+policy_refund_v4_18_db6bde5a41227e5f,policy_refund_v4,kh có thể xem bill [ở đây](http://link.com) và gọi 0901234567 hoặc gửi {{SUPPORT_EMAIL}} để đc hoàn tt.,2026-02-01,2026-04-10T08:00:00
